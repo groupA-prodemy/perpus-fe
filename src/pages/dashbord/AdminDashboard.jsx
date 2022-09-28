@@ -6,7 +6,6 @@ export let usernameArr = []
 export let roleArr = []
 export default function AdminDashboard() {
     let userIdArr = []
-    // let responsesLogout = []
     const navigate = useNavigate()
 
     try {
@@ -32,28 +31,6 @@ export default function AdminDashboard() {
         userIdArr.push(localStorage.getItem("uId"))
     }
 
-    // async function logout(event) {
-    //     event.preventDefault()
-    //     const targetUrl = "https://be-library-mini-system.herokuapp.com/auth/logout/" + userIdArr[userIdArr.length - 1]
-    //     const method = "POST"
-    //     await fetch(targetUrl, {
-    //         method: method,
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         }
-    //     }).then((re) => re.json()).then((d) => responsesLogout.push(d))
-    //     if (responsesLogout[responsesLogout.length - 1].status.toString() === "true") {
-    //         alert
-    //             (
-    //                 responsesLogout[responsesLogout.length - 1].message.toString()
-    //             )
-    //         setTimeout(() => {
-    //             navigate("/")
-    //         }, 5000, navigate("/end"))
-    //     } else {
-    //         responsesLogout[responsesLogout.length - 1].message.toString()
-    //     }
-    // }
 
     return <>
         <div className="row">

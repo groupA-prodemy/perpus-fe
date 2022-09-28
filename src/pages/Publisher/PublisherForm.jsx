@@ -24,8 +24,6 @@ export default function PublisherForm() {
     const res = await axios.get(
       "https://be-library-mini-system.herokuapp.com/publisher/list"
     );
-
-    console.log(res.data);
     setPublishers(res.data);
   }
 

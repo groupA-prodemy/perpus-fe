@@ -32,24 +32,6 @@ export default function UserDashboard() {
                     </div>
                 </div>
             </div>
-            {/* <nav>
-                <Link to={"/book/list"}>
-                    Book List
-                </Link>
-                &nbsp; &nbsp;
-                <Link to={"/users/" + username[username.length - 1]}>
-                    Profile
-                </Link>
-                &nbsp; &nbsp;
-                <button className={"btn btn-danger"} onClick={(event) => logout(event)}>
-                    Logout
-                </button>
-            </nav>
-            <h3>
-                Welcome in your Dashboard as {roleArr[roleArr.length - 1]}, Hai {person[person.length - 1]}
-            </h3>
-            <br/>
-            <Outlet/> */}
         </div>
     </>
 }

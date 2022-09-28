@@ -32,8 +32,6 @@ export default function AuthorForm() {
     const res = await axios.get(
       "https://be-library-mini-system.herokuapp.com/author/" + params.authorId
     );
-
-    console.log(res.data);
     setFormInput(res.data);
   }
 

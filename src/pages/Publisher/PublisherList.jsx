@@ -11,8 +11,6 @@ export default function PublisherList() {
       const response = await axios.get(
         "https://be-library-mini-system.herokuapp.com/publisher/list"
       );
-
-      console.log(response.data);
       setPublishers(response.data);
     } catch (err) {
       console.log(err);

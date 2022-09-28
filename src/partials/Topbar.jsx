@@ -116,11 +116,6 @@ export default function Topbar() {
                     {/* <!-- Dropdown - User Information --> */}
                     <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                         aria-labelledby="userDropdown">
-                        {/* <a className="dropdown-item">
-                            <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400">
-                            </i>
-                            Profile
-                        </a> */}
                         <Link to={"/users/" + usernameArr[usernameArr.length - 1]}>
                             <a className="dropdown-item">
                                 <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400">

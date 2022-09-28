@@ -12,8 +12,6 @@ export default function AuthorList() {
       const response = await axios.get(
         "https://be-library-mini-system.herokuapp.com/author/all"
       );
-
-      console.log(response.data);
       setAuthors(response.data);
     } catch (err) {
       alert("Terjadi Masalah");
