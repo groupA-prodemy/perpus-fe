@@ -1,5 +1,7 @@
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {responses} from "../pages/auth/LoginForm.jsx";
+import "../../style/css/sb-admin-2.min.css"
+
 
 export let personArrSideBar = [];
 export let usernameArrSideBar = [];
@@ -23,16 +25,6 @@ const menuList = [
         icon: "fa-book",
         link: "/user/dashboard",
     },
-    // {
-    //     title: "Book List",
-    //     icon: "fa-book",
-    //     link: "/book/list",
-    // },
-    // {
-    //     title: "Category List",
-    //     icon: "fa-folder",
-    //     link: "",
-    // },
     {
         title: "Author",
         icon: "fa-tag",
@@ -52,21 +44,10 @@ const menuList = [
         title: "Role List",
         icon: "fa-mars-double",
         link: "/roles",
-    },
-    // {
-    //     title: "User Book List",
-    //     icon: "fa-user-edit",
-    //     link: "",
-    // },
-    // {
-    //     title: "Form Register",
-    //     icon: "fa-list-alt",
-    //     link: "/register",
-    // },
+    }
 ];
 
 export default function Sidebar() {
-    const navigate = useNavigate();
 
     try {
         let message = responses[responses.length - 1].message.toString().split(" ");
@@ -96,59 +77,6 @@ export default function Sidebar() {
         roleArrSideBar.push(localStorage.getItem("role"));
         userIdArrSideBar.push(localStorage.getItem("uId"));
     }
-
-    // const menuProfile = [
-    //     {
-    //         title: "Profile",
-    //         icon: "fa-user",
-    //         link: "/users/" + usernameArrSideBar[usernameArrSideBar.length - 1],
-
-    //     },
-    // ];
-    // const menuLogOut = [
-    //     {
-    //         title: "Log Out",
-    //         icon: "fa-power-off",
-    //     },
-    // ];
-
-    // async function logout(event) {
-    //     event.preventDefault();
-    //     const targetUrl
-    //         = "https://be-library-mini-system.herokuapp.com/auth/logout/" + userIdArrSideBar[userIdArrSideBar.length - 1];
-    //     const method = "POST";
-    //     await fetch(targetUrl, {
-    //         method: method,
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //         },
-    //     })
-    //         .then((re) => re.json())
-    //         .then((d) => responsesLogoutSideBar.push(d));
-
-    //     if (
-    //         responsesLogoutSideBar[
-    //         responsesLogoutSideBar.length - 1
-    //             ].status.toString() === "true"
-    //     ) {
-    //         alert(
-    //             responsesLogoutSideBar[
-    //             responsesLogoutSideBar.length - 1
-    //                 ].message.toString()
-    //         );
-    //         setTimeout(
-    //             () => {
-    //                 navigate("/");
-    //             },
-    //             5000,
-    //             navigate("/end")
-    //         );
-    //     } else {
-    //         responsesLogoutSideBar[
-    //         responsesLogoutSideBar.length - 1
-    //             ].message.toString();
-    //     }
-    // }
 
     return (
         <>
