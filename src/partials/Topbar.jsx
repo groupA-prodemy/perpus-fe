@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 
+import gbr from "../../style/img/undraw_profile.svg"
 
 export let personArr = []
 export let usernameArr = []
@@ -110,7 +111,7 @@ export default function Topbar() {
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span className="mr-2 d-none d-lg-inline text-gray-600 small">{personArr[personArr.length - 1]}</span>
                         <img className="img-profile rounded-circle"
-                            src="../../style/img/undraw_profile.svg" />
+                            src={gbr} />
                     </a>
                     {/* <!-- Dropdown - User Information --> */}
                     <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -127,13 +128,6 @@ export default function Topbar() {
                                 Profile
                             </a>
                         </Link>
-                        {/* <Link to={"/user/dashboard"}>
-                            <a className="dropdown-item">
-                                <i className="fas fa-book fa-sm fa-fw mr-2 text-gray-400">
-                                </i>
-                                Book List
-                            </a>
-                        </Link> */}
 
                         <div className="dropdown-divider"></div>
                         <a className="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
