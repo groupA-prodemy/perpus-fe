@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import {responses} from "../pages/auth/LoginForm.jsx";
-import "../../style/css/sb-admin-2.min.css"
+import "../../style/js/sb-admin-2.min.js"
 
 
 export let personArrSideBar = [];
