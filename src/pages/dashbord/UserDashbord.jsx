@@ -21,7 +21,7 @@ export default function UserDashboard() {
                     <div className="card-deck">
                         {books.map(book =>
                             <div className="card">
-                                <img className="card" src={buku} alt="" />
+                                <img className="card-img-top" src={buku} alt="" />
                                 <div className="card-body" key={book.bookId}>
                                     <h5 className="card-title">{book.bookTitle}</h5>
                                     <p className="card-text">{book.bookStatus === true ? "Tersedia" : "Dipinjam"}</p>
