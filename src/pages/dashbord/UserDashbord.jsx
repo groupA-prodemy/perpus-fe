@@ -18,14 +18,14 @@ export default function UserDashboard() {
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <div class="card-deck">
+                    <div className="card-deck">
                         {books.map(book =>
-                            <div class="card">
-                                <img class="card" src={buku} alt="" />
-                                <div class="card-body" key={book.bookId}>
-                                    <h5 class="card-title">{book.bookTitle}</h5>
-                                    <p class="card-text">{book.bookStatus === true ? "Tersedia" : "Dipinjam"}</p>
-                                    <p class="card-text"><small class="text-muted">{book.bookYear}</small></p>
+                            <div className="card">
+                                <img className="card" src={buku} alt="" />
+                                <div className="card-body" key={book.bookId}>
+                                    <h5 className="card-title">{book.bookTitle}</h5>
+                                    <p className="card-text">{book.bookStatus === true ? "Tersedia" : "Dipinjam"}</p>
+                                    <p className="card-text"><small class="text-muted">{book.bookYear}</small></p>
                                 </div>
                             </div>
                         )}

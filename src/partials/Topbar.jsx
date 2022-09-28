@@ -110,7 +110,7 @@ export default function Topbar() {
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span className="mr-2 d-none d-lg-inline text-gray-600 small">{personArr[personArr.length - 1]}</span>
                         <img className="img-profile rounded-circle"
-                            src="/img/undraw_profile.svg" />
+                            src="../../style/img/undraw_profile.svg" />
                     </a>
                     {/* <!-- Dropdown - User Information --> */}
                     <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -143,7 +143,6 @@ export default function Topbar() {
                 </li>
 
             </ul>
-
         </nav>
     </>
 }
