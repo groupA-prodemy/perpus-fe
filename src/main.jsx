@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Navigate, HashRouter} from "react-router-dom";
 
 import App from "./App";
 import UserList from "./pages/user/UserList.jsx";
@@ -26,7 +26,7 @@ import BookList2 from "./pages/book/BookList2";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/">
                     <Route index element={<Navigate to={"/login"} replace/>}/>
@@ -72,6 +72,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     </Route>
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 );

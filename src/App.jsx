@@ -5,7 +5,7 @@ import Sidebar from "./partials/Sidebar"
 import Topbar from "./partials/Topbar"
 
 function App() {
-    return <>
+    return (
         <div id="wrapper">
 
             {/* <!-- Sidebar --> */}
@@ -42,8 +42,7 @@ function App() {
             {/* <!-- End of Content Wrapper --> */}
 
         </div>
-        {/* <!-- End of Page Wrapper --> */}
-    </>
+    )
 }
 
 export default App
